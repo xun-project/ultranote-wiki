@@ -798,6 +798,19 @@ needed amount.</p>
   		}
 		 }
 		</code>
+        <h3>createIntegrated</h3>
+        <b><p>Create integrated address method takes an address and a payment ID and returns an integrated address.</p></b>
+
+        <code>curl -d '{"jsonrpc":"2.0","id":1,"method":"createIntegrated","params":{"payment_id":"29e1125740cbf6ccd2ab4e71b42fb33a5797ed08ddd19e26e3d3ce0bf4626242", "address":"Xuniikm29PG7RWxMvRtKH5hZGNT3aERYFaKkG2onUpa7hWmbYMQsMHrdAML7tmJS8qaCg7dNBowTDcw56uYPMcLxN4WQHxGEdGu"}}' http://localhost:8070/json_rpc</code>
+       <h4>Expected output: </h4>
+<code>{
+"id":1,
+  "jsonrpc":"2.0",
+  "result":{
+   "integrated_address": "XuniigATLWt9EGKD4ZBwwXJ6b9ru1m4do9mJSjyjzDvmHRfTTTfsparHxd9UH2kdexAbomLAmAeVYHdG11GkbzDPA4mfmjJaCpA7RWxMvRtKH5hZGNT3aERYFaKkG2onUpa7hWmbYMQsMHrdAML7tmJS8qaCg7dNBowTDcw56uYPMcLxN4WQHyZVqMi"
+  }
+ }
+</code>
 		 </article>
         </div>
     </section>
